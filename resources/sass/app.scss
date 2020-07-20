@@ -1,0 +1,48 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+
+// Import SCSS Files
+
+// base
+@import 'base/base';
+@import 'base/helpers';
+@import 'base/reset';
+@import 'base/typography';
+
+
+// Components
+@import 'components/buttons';
+@import 'components/search';
+@import 'components/forms';
+
+// Layout
+@import 'layout/navbar';
+@import 'layout/header';
+@import 'layout/footer';
+
+// Pages
+@import 'pages/cart';
+@import 'pages/landing-page';
+@import 'pages/product';
+@import 'pages/shop';
+@import 'pages/cart';
+@import 'pages/checkout';
+@import 'pages/thankyou';
+
+// Responsive
+@import 'responsive.scss';
+
+

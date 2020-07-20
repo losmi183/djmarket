@@ -1,0 +1,22 @@
+.search {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+
+    .input-container {
+        padding: 8px;
+        border: 1px solid black;
+    }
+
+    input {
+        padding: 10px;
+        // font-size: 0.8rem;
+        border: none;
+        outline:none;
+    }
+}
+
+.breadcr {
+    padding: 15px 0;
+    font-size: 1.2rem;
+}

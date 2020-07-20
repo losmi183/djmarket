@@ -1,0 +1,59 @@
+.my-container {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.spacer {
+    margin-bottom: 30px;
+}
+
+.liner {  
+  margin-top: 15px;
+  border-top: 1px solid #aaa;
+  margin-bottom: 15px;
+}
+.liner-sm {  
+  margin-top: 5px;
+  border-top: 1px solid #aaa;
+  margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+    &:visited {
+        color: black;
+    }
+
+    &:hover {
+        color: lighten(black, 40%);
+    }
+
+}
+
+.box {
+  text-align: center;
+  margin: 20px 0 0;
+  padding: 10px;
+  // border: 1px solid black;
+
+  .box-image {
+    min-height: 275px;
+
+    img {
+        margin-bottom: 10px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+  }
+
+
+  h3 {
+    margin: 10px 0;
+  }
+}

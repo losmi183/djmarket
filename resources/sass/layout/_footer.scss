@@ -1,0 +1,23 @@
+footer {
+    background: #535353;
+    padding: 50px 0;
+    color: #eee;
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .social-links {
+        display: flex;
+
+        a {
+            margin: 20px;
+            font-size: 20px;
+        }
+        i {
+            color: #eee;
+        }
+    }
+}

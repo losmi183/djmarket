@@ -1,0 +1,133 @@
+#checkout {
+
+    h1.title-lined {
+        color: red;
+    }
+
+    padding: 30px 0 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+
+    .title-lined {
+        margin: 30px 0;
+    }
+
+}
+
+.checkout-order-title {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.order-table {
+
+    .order-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid black;
+    }
+    
+    .order-row-left {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .image-container {
+            min-width: 120px;
+            margin-right: 10px;
+        }
+        .order-row-info {
+            line-height: 1.4;
+
+            p:nth-child(odd) {
+                font-weight: 400;
+            }
+        }
+    }
+
+    .order-row-right {
+        // Vertikalno centriranje...
+        display: flex;
+        align-items: center;
+    
+        .order-row-info {
+            line-height: 1.5;
+        }
+    }
+
+    .checkout-table-quantity {
+        border: 1px solid #919191;
+        padding: 4px 12px;
+        margin-right: 5px;
+        font-weight: 300;
+    }
+}
+
+
+.total-subtotal {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 200;
+    font-size: 1.4;
+    line-height: 1.8;
+    border-bottom: 1px solid black;
+
+    .total-price {
+        font-weight: 600;
+        font-size: 2.4 !important;
+    }
+}
+
+.have-code {
+    
+    text-align: right !important;
+    margin-top: 20px !important;
+}
+
+.have-code-container {
+    display: flex;
+    justify-content: flex-end;        
+    padding: 15px 0;
+    background: none !important;
+
+    span {
+        background: none !important;
+    }
+    
+    input {
+        height: 54px;
+    }
+
+}
+
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+.StripeElement {
+  box-sizing: border-box;
+
+  padding: 16px 16px;
+
+  border: 1px solid #ccc;
+  background-color: white;
+
+}
+
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+#card-errors {
+    color: #fa755a;
+}
+

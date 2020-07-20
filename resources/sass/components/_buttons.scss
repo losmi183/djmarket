@@ -1,0 +1,73 @@
+.button-primary {
+    padding: 15px 40px;
+    // border: 1px solid black;
+    background: orange;
+    color: white !important;
+
+    &:hover {
+        background: rgb(255, 196, 0);
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.button {
+    padding: 15px 40px;
+    background: black;
+    color: white;
+}
+.button-light {
+    padding: 15px 40px;
+    border: 1px solid black;
+    color: white;
+
+    &:hover {
+        background: white;
+        color: black;
+        border: 1px solid black;
+        text-decoration: none;
+    }
+}
+.button-dark {
+    padding: 15px 40px;
+    border: 1px solid #3B3B3B;
+    color: #3B3B3B;
+
+    &:hover {
+        background: black;
+        color: white;
+        border: 1px solid white;
+        text-decoration: none;
+    }
+}
+.button-simple {
+    background: none;
+    border: none;
+    font-weight: 200;
+    font-size: 0.8rem;
+    cursor: pointer;
+
+    &:hover {
+        color: #555;
+    }
+}
+
+.button-complete {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background: #3EBFA4;
+    border: none;
+    color: white;
+
+    &:hover {
+        background: #228f77;
+        color: #hhh;
+    }
+}
+
+
+.disabled-button {
+    cursor: not-allowed;
+    background: lighten($color: #228f77, $amount: 20%);
+}

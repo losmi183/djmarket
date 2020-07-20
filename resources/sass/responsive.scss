@@ -1,0 +1,115 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .my-container {
+        max-width: 960px;
+        padding: 0 10px;
+    }
+    .cart-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+    header {
+        .hero {
+            grid-template-columns: 1fr;
+            text-align:  center;
+        }
+    }
+    
+    #landing-random {
+        padding: 80px 0 80px;
+        text-align: center;
+
+        .random-products {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 20px;
+        }
+    }
+
+    .box .box-image {
+        min-height: 225px !important;          
+    }  
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .box .box-image {
+            min-height: 200px !important;          
+        }           
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    
+    .nav {
+        flex-direction: column;
+
+        .logo {
+            margin-bottom: 20px !important;
+        }
+    }
+    
+    .box .box-image {
+        min-height: 160px !important;          
+    }  
+
+    #checkout {
+        grid-template-columns: 1fr;
+    }
+
+    #landing-random .random-products {
+        grid-template-columns: 1fr;
+    }
+
+    #landing-blog .lastest-blogs {
+        display: grid;
+        grid-template-columns: 1fr;
+        p {
+            display: none;
+        }
+    }
+
+    .footer {        
+        flex-direction: column;
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    .search {        
+        flex-direction: column;
+    }
+    
+    #main-area {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+    }
+
+    #main-area .products-title {
+        flex-direction: column;
+    }
+
+    #main-area .products-content {
+        grid-template-columns: 1fr;
+    }
+
+    #product-area {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .might-like-images {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
