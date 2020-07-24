@@ -6,7 +6,7 @@
 
 <section id="landing-random">
     <div class="my-container">
-        <h1 class="landing-caption">Dj Market Ecommerce Example Site !</h1>
+        <h1 class="landing-caption">Dj Market Ecommerce Example Site</h1>
         <p class="landing-text">This web site served as a example of my work. </p>
         <p>You are welcome to order somethinng and Log in and check customized voyager administration of the products categories orders and users</p>
         

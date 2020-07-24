@@ -1,0 +1,16 @@
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#about {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    i {
+        color: orange;
+        font-size: 5rem;
+        margin-bottom: 30px;
+    }
+}

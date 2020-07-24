@@ -18,13 +18,17 @@
 }
 .button-light {
     padding: 15px 40px;
-    border: 1px solid black;
+    border: 1px solid white;
     color: white;
+
+    &:visited {
+        color: white;
+    }
 
     &:hover {
         background: white;
         color: black;
-        border: 1px solid black;
+        border: 1px solid transparent;
         text-decoration: none;
     }
 }

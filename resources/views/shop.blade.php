@@ -27,14 +27,14 @@
 
                     <div class="sortname">
                         <span class="price">Sort By name: </span>
-                        <a href=" {{route('shop.index', ['category' => request()->category, 'sortname' => 'a-z'])}} ">A-Z</a>|
-                        <a href="{{route('shop.index', ['category' => request()->category, 'sortname' => 'z-a'])}}">Z-A</a>
+                        <a href=" {{route('shop.index', ['category' => request()->category, 'sortname' => 'a-z'])}} "><span><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></span></a>|
+                        <a href="{{route('shop.index', ['category' => request()->category, 'sortname' => 'z-a'])}}"><span><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></span></a>
                     </div>
 
                     <div class="sort">
                         <span class="price">Sort by price:</span>
-                        <a href=" {{route('shop.index', ['category' => request()->category, 'sort' => 'high_low'])}} "><span>High to Low</span>|</a>
-                        <a href=" {{route('shop.index', ['category' => request()->category, 'sort' => 'low_high'])}} "><span>Low to High</span></a>
+                        <a href=" {{route('shop.index', ['category' => request()->category, 'sort' => 'high_low'])}} "><span><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></span></a>
+                        <a href=" {{route('shop.index', ['category' => request()->category, 'sort' => 'low_high'])}} "><span><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></span></a>
                     </div>
                 </div>
 

@@ -11197,14 +11197,18 @@ h3 {
 
 .button-light {
   padding: 15px 40px;
-  border: 1px solid black;
+  border: 1px solid white;
+  color: white;
+}
+
+.button-light:visited {
   color: white;
 }
 
 .button-light:hover {
   background: white;
   color: black;
-  border: 1px solid black;
+  border: 1px solid transparent;
   text-decoration: none;
 }
 
@@ -11272,6 +11276,28 @@ h3 {
 .breadcr {
   padding: 15px 0;
   font-size: 1.2rem;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sort i {
+  font-size: 1.4rem;
+  margin: 0 5px;
+}
+
+.sortname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sortname i {
+  font-size: 1.4rem;
+  margin: 0 5px;
 }
 
 .my-form-group {
@@ -11811,6 +11837,23 @@ p.landing-text {
 .thankyou a {
   display: inline-block;
   margin-bottom: 100px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#about {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+#about i {
+  color: orange;
+  font-size: 5rem;
+  margin-bottom: 30px;
 }
 
 /* Large Devices, Wide Screens */
