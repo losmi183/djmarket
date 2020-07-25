@@ -1,0 +1,37 @@
+.container-wide {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 50px;
+}
+
+.admin-sidebar {
+
+    height: 100vh;
+    background-color: #aaa;
+    color: white;
+
+    .admin-logo {
+        display: flex;
+        h1 {
+            margin-top: 40px;
+            margin-left: 20px;
+        }
+    }
+
+    li {
+        background-color: #aaa;
+        
+        &:hover {
+            background: #eee;
+            color: rgb(36, 36, 36);
+            cursor: pointer;
+        }
+    }
+
+    .admin-logo {
+        img {
+            margin: 30px 15px;
+        }
+    }
+
+}

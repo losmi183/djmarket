@@ -11856,6 +11856,41 @@ p.landing-text {
   margin-bottom: 30px;
 }
 
+.container-wide {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 50px;
+}
+
+.admin-sidebar {
+  height: 100vh;
+  background-color: #aaa;
+  color: white;
+}
+
+.admin-sidebar .admin-logo {
+  display: flex;
+}
+
+.admin-sidebar .admin-logo h1 {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.admin-sidebar li {
+  background-color: #aaa;
+}
+
+.admin-sidebar li:hover {
+  background: #eee;
+  color: #242424;
+  cursor: pointer;
+}
+
+.admin-sidebar .admin-logo img {
+  margin: 30px 15px;
+}
+
 /* Large Devices, Wide Screens */
 
 @media only screen and (max-width: 1200px) {

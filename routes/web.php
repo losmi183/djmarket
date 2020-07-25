@@ -82,3 +82,17 @@ Route::delete('/coupon', 'CouponsController@remove')->name('coupon.remove');
 
 Route::get('/thankyou', 'ConfirmationController@index')->name('confirmation.index');
 
+
+
+/*
+*
+* Admin Routes
+*
+*/
+Route::get('/admin', function(){
+    return view('admin.index');
+});
+
+Route::get('/products', 'ProductsController@index')->name('products.index');
+
+
