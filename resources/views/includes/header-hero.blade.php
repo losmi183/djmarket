@@ -1,11 +1,6 @@
 <header id="landing-image">
     <div class="my-container header">
-        <div class="nav">
-            <div class="logo">
-                <a href="{{route('landing-page')}}">
-                    <img width="70px" src="img/logo-color.png" alt="">
-                </a>
-            </div>
+        <div class="">
             @include('includes.navbar-main')
         </div>
 

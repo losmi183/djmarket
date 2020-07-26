@@ -15,7 +15,15 @@
     padding: 15px 40px;
     background: black;
     color: white;
+        
+    &:hover {
+        background: white;
+        color: black;
+        border: 1px solid transparent;
+        text-decoration: none;
+    }
 }
+
 .button-light {
     padding: 15px 40px;
     border: 1px solid white;

@@ -10935,6 +10935,7 @@ a.text-dark:focus {
 
 body {
   font-family: "Nunuto", "Roboto", Arial, Helvetica;
+  font-weight: 300;
 }
 
 h1,
@@ -11195,6 +11196,13 @@ h3 {
   color: white;
 }
 
+.button:hover {
+  background: white;
+  color: black;
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
 .button-light {
   padding: 15px 40px;
   border: 1px solid white;
@@ -11350,32 +11358,43 @@ header {
   color: white;
 }
 
-header .nav {
+header #nav {
   padding: 30px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header #nav-links {
-  display: flex;
-  text-transform: uppercase;
-}
-
-header #nav-links li {
+header #nav li {
   margin-left: 40px;
 }
 
-header #nav-links li a {
+header #nav li a {
   color: white;
 }
 
-header #nav-links li a:visited {
+header #nav li a:visited {
   color: white;
 }
 
-header #nav-links li a:hover {
+header #nav li a:hover {
   color: #ccc;
+}
+
+header #nav .nav-left {
+  display: flex;
+}
+
+header #nav .nav-left .logo {
+  margin-right: 50px;
+}
+
+header #nav .nav-left li {
+  padding-top: 30px;
+}
+
+header #nav .nav-right {
+  display: flex;
 }
 
 header .cart-counter {
@@ -11858,8 +11877,8 @@ p.landing-text {
 
 .container-wide {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-gap: 50px;
+  grid-template-columns: 1fr 8fr;
+  grid-gap: 40px;
 }
 
 .admin-sidebar {
@@ -11882,13 +11901,28 @@ p.landing-text {
 }
 
 .admin-sidebar li:hover {
-  background: #eee;
-  color: #242424;
+  background: #212529;
   cursor: pointer;
+}
+
+.admin-sidebar li a:visited {
+  color: white;
 }
 
 .admin-sidebar .admin-logo img {
   margin: 30px 15px;
+}
+
+.delete-link {
+  background: none;
+  border: none;
+  font-weight: 200;
+  cursor: pointer;
+  color: red;
+}
+
+.delete-link i {
+  margin-right: 5px;
 }
 
 /* Large Devices, Wide Screens */

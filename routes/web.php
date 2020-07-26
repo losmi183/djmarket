@@ -90,9 +90,19 @@ Route::get('/thankyou', 'ConfirmationController@index')->name('confirmation.inde
 *
 */
 Route::get('/admin', function(){
-    return view('admin.index');
-});
+    return view('admin.dashboard');
+})->name('admin.dashboard');
 
-Route::get('/products', 'ProductsController@index')->name('products.index');
+Route::get('/products/index', 'ProductsController@index')->name('products.index');
 
 
+Route::resource('categories', 'CategoriesController');
+
+
+
+
+// Auth Routes
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
