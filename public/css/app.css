@@ -11346,6 +11346,33 @@ h3 {
   padding: 10px;
 }
 
+nav.navbar ul > li > a {
+  font-size: 1.1rem !important;
+  color: white !important;
+}
+
+nav.navbar ul > li > a:visited {
+  color: white !important;
+}
+
+nav.navbar ul > li > a:hover {
+  color: #ccc !important;
+}
+
+nav.navbar .dropdown-menu {
+  color: white !important;
+  background: #535353;
+}
+
+nav.navbar .dropdown-menu a {
+  color: white !important;
+  background: #535353;
+}
+
+nav.navbar .dropdown-menu a:hover {
+  color: #ccc !important;
+}
+
 #header-simple {
   background: #535353;
 }

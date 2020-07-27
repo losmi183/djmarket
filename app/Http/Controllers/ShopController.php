@@ -78,6 +78,7 @@ class ShopController extends Controller
         $mightLike = Product::where('slug', '!=', $slug)->inRandomOrder()->take(4)->get();
 
         return view('product', compact('product', 'mightLike'));
+
     }
 
 }

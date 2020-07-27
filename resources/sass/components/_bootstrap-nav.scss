@@ -1,0 +1,30 @@
+nav.navbar {
+    
+    ul > li > a {
+        font-size: 1.1rem !important;
+        color: white !important;
+
+        &:visited {
+            color: white !important;
+        }
+        &:hover {
+            color: #ccc !important;
+        }
+    }
+
+
+    .dropdown-menu {
+        color: white !important;
+        background: #535353;
+
+        a {
+            color: white !important;
+            background: #535353;
+
+            &:hover {
+                color: #ccc !important;
+            }
+        }
+
+    }
+}

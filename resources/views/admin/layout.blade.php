@@ -15,8 +15,6 @@
     {{-- Custom Style / My Css  --}}
     <link rel="stylesheet" href=" {{asset('css/app.css')}} ">
 
-    @yield('extra-css')
-
     <title>Dj Market | Admin</title>
 </head>
 <body>
