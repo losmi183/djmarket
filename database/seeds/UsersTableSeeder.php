@@ -16,21 +16,36 @@ class UsersTableSeeder extends Seeder
         User::create([
             'name' => 'admin',
             'email' => 'admin@djmarket.co',
-            'password' => 'password'
+            'password' => bcrypt('password'),
+            'remember_token' => str_random(60),
+            'role'        => 'admin',
+
         ]);
 
         // Publisher User
         User::create([
             'name' => 'publisher',
             'email' => 'publisher@djmarket.co',
-            'password' => 'password'
+            'password' => bcrypt('password'),
+            'remember_token' => str_random(60),
+            'role'        => 'publisher',
         ]);
 
 
         User::create([
             'name' => 'milos',
             'email' => 'milos.glogovac@gmail.com',
-            'password' => 'losmi183'
+            'password' => bcrypt('losmi183'),
+            'remember_token' => str_random(60),
+            'role'        => 'admin',
+        ]);
+
+        User::create([
+            'name' => 'nikola',
+            'email' => 'nikola@djmarket.co',
+            'password' => bcrypt('nikola'),
+            'remember_token' => str_random(60),
+            'role'        => 'admin',
         ]);
 
         // Random Users
@@ -38,7 +53,9 @@ class UsersTableSeeder extends Seeder
             User::create([
                 'name' => 'random'.$i,
                 'email' => 'random'.$i.'@mail.com',
-                'password' => 'password'
+                'password' => bcrypt('password'),
+                'remember_token' => str_random(60),
+                'role'        => 'customer',
             ]);
         }
         

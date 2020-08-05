@@ -29,7 +29,7 @@
                 <li class="list-group-item"><a href="{{route('products.index')}}">Products</a></li>
                 <li class="list-group-item"><a href="{{route('categories.index')}}">Categories</a></li>
                 <li class="list-group-item">Orders</li>
-                <li class="list-group-item">Users</li>
+                <li class="list-group-item"><a href="{{route('users.index')}}">Users</a></li>
             </ul>
         </div>
         <div class="admin-content">

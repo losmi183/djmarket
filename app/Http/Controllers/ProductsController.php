@@ -10,6 +10,13 @@ use Illuminate\Support\Facades\Storage;
 
 class ProductsController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('publisher');
+        $this->middleware('admin')->only('destroy');
+    }
+
     /**
      * Display a listing of the resource.
      *

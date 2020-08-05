@@ -61,6 +61,13 @@
     <ul class="navbar-nav mr-auto">        
       <li class="nav-item"><a class="nav-link" href="{{route('shop.index')}}">Shop</a></li>
       <li class="nav-item"><a class="nav-link" href="{{route('about')}}">About</a></li>
+      
+      @if ( isCustomer() )
+        <li class="nav-item"><a class="nav-link" href="{{route('admin.dashboard')}}">My Orders</a></li>          
+      @else
+        <li class="nav-item"><a class="nav-link" href="{{route('admin.dashboard')}}">Admin</a></li>   
+      @endif
+
     </ul>
         
     <ul class="navbar-nav ml-auto">

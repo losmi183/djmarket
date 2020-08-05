@@ -62,7 +62,7 @@
             @else
                 <p>No Items in Shopping Cart</p>   
                 <div class="spacer"></div>
-                <a class="button-light" href="{{route('shop.index')}}">Continue Shopping</a>
+                <a class="button-dark" href="{{route('shop.index')}}">Continue Shopping</a>
             @endif
 
             <div class="spacer"></div>
@@ -86,7 +86,7 @@
             </div>
 
             <div class="cart-buttons">
-                <a href="{{route('shop.index')}}" class="button-light">Continue Shopping</a>
+                <a href="{{route('shop.index')}}" class="button-dark">Continue Shopping</a>
                 <a href="{{route('checkout.index')}}" class="button-primary">Procede to Checkout</a>
             </div>
 
