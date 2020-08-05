@@ -12,11 +12,20 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
+        // Admin 
         User::create([
             'name' => 'admin',
             'email' => 'admin@djmarket.co',
             'password' => 'password'
         ]);
+
+        // Publisher User
+        User::create([
+            'name' => 'publisher',
+            'email' => 'publisher@djmarket.co',
+            'password' => 'password'
+        ]);
+
 
         User::create([
             'name' => 'milos',
@@ -24,6 +33,7 @@ class UsersTableSeeder extends Seeder
             'password' => 'losmi183'
         ]);
 
+        // Random Users
         for ($i=1; $i < 11; $i++) { 
             User::create([
                 'name' => 'random'.$i,
