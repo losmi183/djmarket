@@ -7,3 +7,7 @@ function presentPrice($price) {
 function setActiveClass ($category, $class = 'active') {
     return $category == request()->category ? $class : '';
 }
+
+function presentInEuros($price) {
+    return $price / 100;
+}

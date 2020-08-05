@@ -34,7 +34,9 @@
         </div>
         <div class="admin-content">
             
-            {{-- @include('includes.messages') --}}
+            @include('admin.includes.messages')
+
+            @yield('js-code')
 
             @yield('content')
             

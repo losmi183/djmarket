@@ -3,8 +3,8 @@
         
         <a class="navbar-brand" href="{{ url('/') }}">
             <img width="70px" src="/img/logo-color.png" alt="">
-            Admin Panel
         </a>
+        <h1 class="text-white ml-5 pl-4 mt-2">Admin Panel</h1>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>

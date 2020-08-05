@@ -19,6 +19,8 @@ class ProductsTableSeeder extends Seeder
         $price_headphones = [4900, 5900, 8900, 11900, 18900, 29900];
         $price_cards = [8900, 11900, 18900, 29900, 25900, 39900];
 
+        $images = '["mixer1.png", "mixer2.png", "mixer3.png", "mixer4.png", "mixer5.png", "mixer6.png", "mixer7.png", "mixer8.png", "mixer9.png"]';
+
         // Players SEED
         for($i=1; $i<=10; $i++) {
             Product::create([
@@ -26,7 +28,9 @@ class ProductsTableSeeder extends Seeder
                 'name' => 'Player ' . $i,
                 'details' => 'DVD, CD, USB / WAV FLAC MP3',
                 'price' => $price_players[array_rand($price_players)],
-                'description' => 'Lorem ' .$i. ' ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem integer vitae justo eget magna fermentum.'
+                'description' => 'Lorem ' .$i. ' ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem integer vitae justo eget magna fermentum.',
+                'image' => 'player-' . $i . '.jpg',
+                'images' => $images
                 ])->categories()->attach(1);
                 // For every created product, add row in pivot (category_product) table, with category_id = 1
             }
@@ -38,7 +42,9 @@ class ProductsTableSeeder extends Seeder
                 'name' => 'Mixer ' . $i,
                 'details' => '24 bit, 192KHz, Stereo Hi Quality sound',
                 'price' => $price_mixers[array_rand($price_mixers)],
-                'description' => 'Lorem ' .$i. ' ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem integer vitae justo eget magna fermentum.'
+                'description' => 'Lorem ' .$i. ' ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem integer vitae justo eget magna fermentum.',
+                'image' => 'mixer-' . $i . '.jpg',
+                'images' => $images
                 ])->categories()->attach(2);
             }
 
@@ -56,7 +62,9 @@ class ProductsTableSeeder extends Seeder
                     'name' => 'Controller ' . $i,
                 'details' => 'Digital Dj Controll, Hi Performance Dj-ing',
                 'price' => $price_controllers[array_rand($price_controllers)],
-                'description' => 'Lorem ' .$i. ' ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem integer vitae justo eget magna fermentum.'
+                'description' => 'Lorem ' .$i. ' ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem integer vitae justo eget magna fermentum.',
+                'image' => 'controller-' . $i . '.jpg',
+                'images' => $images
             ])->categories()->attach(4);
         }
 
@@ -69,7 +77,9 @@ class ProductsTableSeeder extends Seeder
                 'name' => 'Headphones ' . $i,
                 'details' => 'Cloased type, High output dj headphones',
                 'price' => $price_headphones[array_rand($price_headphones)],
-                'description' => 'Lorem ' .$i. ' ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem integer vitae justo eget magna fermentum.'
+                'description' => 'Lorem ' .$i. ' ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem integer vitae justo eget magna fermentum.',
+                'image' => 'headphones-' . $i . '.jpg',
+                'images' => $images
             ])->categories()->attach(5);
         }
 
@@ -81,7 +91,9 @@ class ProductsTableSeeder extends Seeder
                 'name' => 'Card ' . $i,
                 'details' => '24bit 192Khz USB audio interface',
                 'price' => $price_cards[array_rand($price_cards)],
-                'description' => 'Lorem ' .$i. ' ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem integer vitae justo eget magna fermentum.'
+                'description' => 'Lorem ' .$i. ' ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem integer vitae justo eget magna fermentum.',
+                'image' => 'card-' . $i . '.jpg',
+                'images' => $images
             ])->categories()->attach(3);
         }
 

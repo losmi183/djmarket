@@ -6,8 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+    protected $guarded = [];
+
     public function presentPrice() {
-        return '€ '.($this->price / 100);
+        return '€'.($this->price / 100);
     }
 
     public function categories()

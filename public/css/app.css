@@ -11609,6 +11609,21 @@ p.landing-text {
   width: 100%;
 }
 
+#product-area .other-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#product-area .other-images .small-image {
+  padding: 3px;
+  margin: 0 3px 3px 0;
+}
+
+#product-area .other-images .small-image:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 #product-area h2 {
   color: #aaa;
 }

@@ -22,7 +22,7 @@
                 <div class="box">
                     <div class="box-image">
                         <a href="{{route('shop.show', $product->slug)}}">
-                            <img src="{{asset('img/products/'.$product->slug.'.jpg')}}" alt="">
+                            <img src="{{asset('storage/products/'.$product->image)}}" alt="">
                         </a>
                     </div>
                     <a href="{{route('shop.show', $product->slug)}}"><h5>{{$product->name}}</h5></a>

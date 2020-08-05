@@ -17,7 +17,7 @@
                         <div class="cart-row">
                             <div class="cart-row-left">
                                 <a href="{{route('shop.show', $item->model->slug)}}">
-                                    <img height="100px" src="{{asset('img/products/'.$item->model->slug.'.jpg')}}">
+                                    <img height="100px" src="{{$item->model->image ? asset('storage/products/'.$item->model->image) : asset('img/no-image.jpg') }}">
                                 </a>
                                 <span class="product-basic-info">
                                     <a href="{{route('shop.show', $item->model->slug)}}">

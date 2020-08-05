@@ -88,14 +88,13 @@ Route::get('/thankyou', 'ConfirmationController@index')->name('confirmation.inde
 * Admin Routes
 *
 */
-Route::get('/admin', function(){
-    return view('admin.dashboard');
-})->name('admin.dashboard');
+Route::get('/admin', 'DashboardController@index')->name('admin.dashboard');
 
 Route::get('/products/index', 'ProductsController@index')->name('products.index');
 
 
 Route::resource('categories', 'CategoriesController');
+Route::resource('products', 'ProductsController');
 
 
 

@@ -72,13 +72,14 @@ class ShopController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($slug)
-    {
+    {       
         $product = Product::where('slug', $slug)->first();
+
+        // Decoding json array from product.images
+        $images = json_decode($product->images);
         
         $mightLike = Product::where('slug', '!=', $slug)->inRandomOrder()->take(4)->get();
 
-        return view('product', compact('product', 'mightLike'));
-
+        return view('product', compact('product', 'mightLike', 'images'));
     }
-
 }

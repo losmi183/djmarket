@@ -91,7 +91,7 @@
                         <div class="order-row">
                             <div class="order-row-left">
                                 <div class="image-container">
-                                    <img src="{{asset('img/products/'.$item->model->slug.'.jpg')}}" height="80px">
+                                    <img src="{{$item->model->image ? asset('storage/products/'.$item->model->image) : asset('img/no-image.jpg')}}" height="80px">
                                 </div>
                                 <div class="order-row-info">
                                     <p>{{$item->name}}</p>
