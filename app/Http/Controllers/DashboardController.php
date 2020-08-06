@@ -17,9 +17,9 @@ class DashboardController extends Controller
         $count_products = DB::table('products')->count();
         $count_categories = DB::table('categories')->count();
         $count_users = DB::table('users')->count();
-        // $count_users = DB::table('users')->count();
+        $count_orders = DB::table('orders')->count();
 
-        return view('admin.dashboard', compact('count_products', 'count_categories', 'count_users'));
+        return view('admin.dashboard', compact('count_products', 'count_categories', 'count_users', 'count_orders'));
     }
 
     /**

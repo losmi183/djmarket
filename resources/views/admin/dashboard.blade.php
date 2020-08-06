@@ -29,7 +29,7 @@
             ["Element", "Density", { role: "style" } ],
             ["Products", {{$count_products}}, "yellow"],
             ["Categories", {{$count_categories}}, "orange"],
-            ["Orders", 11, "green"],
+            ["Orders", {{$count_orders}}, "green"],
             ["Registered Users", {{$count_users}}, "blue"]
         ]);
 
