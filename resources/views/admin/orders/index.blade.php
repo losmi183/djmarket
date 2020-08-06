@@ -26,7 +26,7 @@
                 <td> {{$order->id}} </td>
                 <td> {{$order->user_id}} </td>
                 <td> {{$order->billing_email}} </td>
-                <td>{{$order->billing_total}}</td>
+                <td>{{presentPrice($order->billing_total)}}</td>
                 <td>{{$order->created_at}}</td>
                 <td>
                     <form action="{{route('orders.update', $order->id)}})" method="POST">
