@@ -28,7 +28,7 @@
                 <li class="list-group-item"><a href="{{route('admin.dashboard')}}">Dashboard</a></li>
                 <li class="list-group-item"><a href="{{route('products.index')}}">Products</a></li>
                 <li class="list-group-item"><a href="{{route('categories.index')}}">Categories</a></li>
-                <li class="list-group-item">Orders</li>
+                <li class="list-group-item"><a href="{{route('orders.index')}}">Orders</a></li>
                 <li class="list-group-item"><a href="{{route('users.index')}}">Users</a></li>
             </ul>
         </div>

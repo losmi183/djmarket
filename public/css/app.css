@@ -11967,6 +11967,36 @@ p.landing-text {
   margin-right: 5px;
 }
 
+.admin-show p {
+  font-weight: 500;
+}
+
+.admin-button-simple {
+  margin: 0 8px;
+  padding: 7px 12px;
+  background: #ccc;
+  border: 1px solid black;
+  font-weight: 200;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.admin-button-simple:hover {
+  color: #555;
+}
+
+.order-processing {
+  background: #fd8d8d;
+}
+
+.order-delivered {
+  background: #91fca8;
+}
+
+.order-sent {
+  background: #f8f68f;
+}
+
 /* Large Devices, Wide Screens */
 
 @media only screen and (max-width: 1200px) {

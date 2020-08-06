@@ -27,14 +27,14 @@
                     <form action="{{route('users.update', $user->id)}}" method="POST">
                         @csrf
                         @method('PATCH')
-                        <div class="form-group d-flex">
-                            <select name="newRole" id="" class="form-control">
+                        <div class="form-group row">
+                            <select name="newRole" id="" class="form-control col-md-6">
                                 <option {{ $user->role == 'customer' ? 'selected' : '' }} value="customer">customer</option>
                                 <option {{ $user->role == 'publisher' ? 'selected' : '' }} value="publisher">publisher</option>
                                 <option {{ $user->role == 'admin' ? 'selected' : '' }} value="admin">admin</option>
                             </select>
-
-                            <button class="button-dark ml-3" type="submit">Change Role</button>
+                            <div class="col-md-1"></div>
+                            <button class="button-dark col-md-5" type="submit">Change Role</button>
                         </div> 
                     </form>
                 </td>

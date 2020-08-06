@@ -92,6 +92,7 @@ Route::get('/admin', 'DashboardController@index')->name('admin.dashboard')->midd
 Route::resource('categories', 'CategoriesController');
 Route::resource('products', 'ProductsController');
 Route::resource('users', 'UsersController')->middleware('admin');
+Route::resource('orders', 'OrdersController')->middleware('publisher');
 
 
 

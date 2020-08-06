@@ -1,0 +1,31 @@
+// Order Show PAge
+
+.admin-show {
+    p {
+        font-weight: 500;
+    }
+}
+
+.admin-button-simple {
+    margin: 0 8px;
+    padding: 7px 12px;
+    background: #ccc;
+    border: 1px solid black;
+    font-weight: 200;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    &:hover {
+        color: #555;
+    }
+}
+
+.order-processing {
+    background: rgb(253, 141, 141)
+}
+.order-delivered {
+    background: rgb(145, 252, 168)
+}
+.order-sent {
+    background: rgb(248, 246, 143)
+}
