@@ -102,3 +102,12 @@ Route::resource('orders', 'OrdersController')->middleware('publisher');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+// Email Route
+Route::get('/mail', function(){
+
+    $order = App\Order::with('products')->find(1);
+
+    return new App\Mail\OrderPlaced($order);
+});

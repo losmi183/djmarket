@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Order;
 use App\OrderProduct;
+use App\Mail\OrderPlaced;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\CheckoutRequest;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Cartalyst\Stripe\Laravel\Facades\Stripe;
@@ -68,7 +70,10 @@ class CheckoutController extends Controller
             ]);
 
             // Calling addOrdersToTables method to fill order and orderproduct tables
-            $this->addOrdersToTables($request, null);
+            $order = $this->addOrdersToTables($request, null);
+
+            // Sent mail
+            Mail::send(new OrderPlaced($order));
 
             // Coupon Destroy
             session()->forget('discount');
@@ -184,6 +189,8 @@ class CheckoutController extends Controller
                 'quantity' =>  $item->qty
             ]);
         }
+
+        return $order;
     }   
 
 }
