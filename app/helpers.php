@@ -65,3 +65,8 @@ function isCustomer()
         return false;
     }
 }
+
+// Shorthening text
+function shortText($string, $length = 60) {
+    return substr($string, 0, $length);
+}

@@ -82,4 +82,20 @@ class ShopController extends Controller
 
         return view('product', compact('product', 'mightLike', 'images'));
     }
+
+    
+ 
+    public function search(Request $request)
+    {   
+        $request->validate([
+            'search' => 'required|min:3'
+        ]);
+        
+        $query = $request->search;
+        // $products = Product::where('name', 'like', '%'.$request->search.'%')->paginate('10');
+
+        $products = Product::search($query)->paginate('10');
+
+        return view('search-results', compact('products'));
+    } 
 }
