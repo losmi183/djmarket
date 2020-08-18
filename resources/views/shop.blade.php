@@ -41,7 +41,7 @@
                             <div class="box">
                                 <div class="box-image">
                                     <a href="{{route('shop.show', $product->slug)}}">
-                                        <img width="250px" src="{{$product->image ? asset('storage/products/'.$product->image) : asset('img/no-image.jpg') }}">
+                                        <img width="250px" src="{{$product->image ? asset('storage/products/'.$product->slug) : asset('img/no-image.jpg') }}">
                                     </a>
                                 </div>
                                 <a href="{{route('shop.show', $product->slug)}}"><h5>{{$product->name}}</h5></a>

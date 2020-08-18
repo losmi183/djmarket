@@ -74,6 +74,9 @@ Route::get('/checkout', 'CheckoutController@index')->name('checkout.index');
 Route::post('/checkout', 'CheckoutController@store')->name('checkout.store');
 
 
+Route::get('/guestCheckout', 'CheckoutController@guestCheckout')->name('guestCheckout.index');
+
+
 Route::post('/coupon', 'CouponsController@apply')->name('coupon.apply');
 Route::delete('/coupon', 'CouponsController@remove')->name('coupon.remove');
 
@@ -104,6 +107,7 @@ Route::resource('orders', 'OrdersController')->middleware('publisher');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 
 
 // Email Route

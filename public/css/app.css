@@ -11997,6 +11997,95 @@ p.landing-text {
   background: #f8f68f;
 }
 
+.login-form {
+  margin-top: 100px;
+  min-height: 64vh;
+}
+
+.login-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 40px !important;
+}
+
+.login-form h4 {
+  font-weight: 600;
+}
+
+.login-form .small-text {
+  font-size: 0.8rem;
+}
+
+.left-panel {
+  border-right: 1px solid #ccc;
+  padding: 0 80px;
+}
+
+.left-panel h2 {
+  margin-bottom: 30px;
+}
+
+.right-panel {
+  margin: auto;
+  text-align: left;
+}
+
+.right-panel h2 {
+  margin-bottom: 30px;
+}
+
+.right-panel h4 {
+  margin-bottom: 10px;
+}
+
+.right-panel .box {
+  margin-top: 20px;
+}
+
+.right-panel a {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.register-form {
+  margin-top: 100px;
+  min-height: 64vh;
+}
+
+.register-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 40px !important;
+}
+
+.register-form h4 {
+  font-weight: 600;
+}
+
+.left-panel {
+  border-right: 1px solid #ccc;
+  padding: 0 80px;
+}
+
+.left-panel h2 {
+  margin-bottom: 30px;
+}
+
+.right-panel {
+  margin: auto;
+  padding: 0 80px;
+}
+
+.right-panel h2 {
+  margin-bottom: 30px;
+}
+
+.right-panel h4 {
+  margin-bottom: 10px;
+}
+
+.right-panel .box {
+  margin-top: 20px;
+}
+
 /* Large Devices, Wide Screens */
 
 @media only screen and (max-width: 1200px) {

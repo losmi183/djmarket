@@ -30,6 +30,8 @@
                             <div class="cart-row-right">
                                 <div class="cart-actions">
 
+                                    {{-- ADFSDFSDFSDF --}}
+
                                     <form action="{{route('cart.destroy', $item->rowId)}}" method="POST">
                                         @csrf
                                         @method('DELETE')

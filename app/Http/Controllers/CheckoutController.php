@@ -193,4 +193,15 @@ class CheckoutController extends Controller
         return $order;
     }   
 
+    public function guestCheckout() 
+    {
+        return view('checkout', [
+            // Accessioing collection with array and method get() 
+            'discount' => $this->getNumbers()['discount'],
+            'newSubtotal' => $this->getNumbers()->get('newSubtotal'),
+            'newTax' => $this->getNumbers()->get('newTax'),
+            'newTotal' => $this->getNumbers()->get('newTotal'),
+        ]);
+    }
+
 }

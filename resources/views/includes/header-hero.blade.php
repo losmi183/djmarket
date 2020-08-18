@@ -7,7 +7,8 @@
         <div class="hero">
             <div class="hero-titles">
                 <h1>Dj Market | Ecommerce Shopping Solution</h1>
-                <p>Includes multiple products categories, a shopping cart with Stripe payment and many more. </p>
+                <h3 class="text-danger">You are welcome to login and check admin backend, email: admin@djmarket.co , pass: password</h3>
+                <h3 class="text-danger mb-4">Also you could test shopping cart and stripe payment with exapmle card 4242 4242 4242 4242</h3>
                 <a href="https://github.com/losmi183" class="button-light">Github</a>
                 <a href="https://www.linkedin.com/in/milos-glogovac-125a7551/" class="button-light">Linkedin</a>
             </div>

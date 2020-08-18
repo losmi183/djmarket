@@ -33,7 +33,7 @@ class OrderPlaced extends Mailable
     {
         return $this
             ->from('admin@djmarket.co', 'Admin')
-            ->to('customer@email.com')
+            ->to($this->order->billing_email)
             ->bcc('another@email.com')
             ->subject('subject line for email')
             ->view('emails.orders.placed', compact('order'));

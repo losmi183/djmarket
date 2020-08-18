@@ -1,0 +1,49 @@
+.login-form {
+    margin-top: 100px;
+    min-height: 64vh;
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 40px !important;
+    }
+
+    h4 {
+        font-weight: 600;
+    }
+
+    .small-text {
+        font-size: 0.8rem;
+    }
+
+}
+
+.left-panel {
+    border-right: 1px solid #ccc;
+    padding: 0 80px;
+
+    h2 {
+        margin-bottom: 30px;
+    }
+}
+
+.right-panel {
+
+    margin: auto;
+    // padding: 0 80px;
+    text-align: left;
+
+    h2 {
+        margin-bottom: 30px;
+    }
+    h4 {
+        margin-bottom: 10px;
+    }
+    .box {
+        margin-top: 20px;
+    } 
+    a {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+}
