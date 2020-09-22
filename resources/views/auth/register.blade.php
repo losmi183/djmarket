@@ -2,6 +2,13 @@
 
 @section('content')
 <div class="container register-form">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-danger">You are welcome to login and check admin backend, email: admin@djmarket.co , pass: password </div>
+        </div>
+    </div>
+    
     <div class="row">
         <div class="col-md-6">
             <div class="left-panel">

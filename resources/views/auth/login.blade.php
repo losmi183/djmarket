@@ -2,6 +2,13 @@
 
 @section('content')
 <div class="container login-form">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-danger">You are welcome to login and check admin backend, email: admin@djmarket.co , pass: password </div>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col-md-6">
             <div class="left-panel">
@@ -12,21 +19,19 @@
                     <h2>Returning Customer</h2>
             
                    
-                    <div class="mb-3 input-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                            </span>
-                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
-                        <input placeholder="Email" id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}"  autocomplete="email" autofocus>
 
-                        @if ($errors->has('email'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('email') }}</strong>
-                            </span>
-                        @endif
-                    </div>        
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>  
 
                     <div class="mb-3 input-group{{ $errors->has('password') ? ' has-error' : '' }}">
                         <div class="input-group-prepend">
@@ -88,5 +93,6 @@
         </div>
 
     </div>    {{-- row  --}}
+
 </div> {{-- container --}}
 @endsection

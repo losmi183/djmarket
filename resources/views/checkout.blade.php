@@ -11,6 +11,12 @@
 
     <div class="my-container">
         <h1 class="title-lined">Checkout</h1>
+        
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-danger">You can test shopping cart and stripe payment API with exapmle card 4242 4242 4242 4242</div>
+        </div>
+    </div>
 
         <section id="checkout">
             <div class="checkout-left">
@@ -151,7 +157,10 @@
                         </form>
                     </div> <!-- end have-code-container -->
                 @endif
-
+                
+                <br>    
+                <div class="alert alert-danger">For €30 fixed discount use: ABC123</div>
+                <div class="alert alert-danger">For 50% percentage discount use: DEF456</div>
 
 
 
