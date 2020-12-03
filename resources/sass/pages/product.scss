@@ -50,13 +50,13 @@
 }
 
 .might-like-images {
-    padding: 20px 0 80px;
+    // padding: 20px 0 80px;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 30px;
+    // grid-gap: 30px;
 
-    .box {
-        border: 1px solid black;
-    }
+    // .box {
+    //     border: 1px solid black;
+    // }
 }

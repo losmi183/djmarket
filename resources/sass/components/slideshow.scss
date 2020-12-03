@@ -1,0 +1,35 @@
+#slideshow {
+    .carousel-itvw {
+        position: relative;
+    }
+
+    .slideshow-text {
+        h1 {
+            font-size: 5vw;
+        }
+        h3 {
+            font-size: 2.5vw;
+        }
+        .red {
+            background: red;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+        }
+        .purple {
+            color: red;
+            font-size: 2.5vw;
+            font-weight: 700;
+        }        
+    }
+    .slideshow-left {
+        position: absolute;
+        top: 5vh;
+        left: 5vh;
+    }
+    .slideshow-right {
+        position: absolute;
+        top: 5vh;
+        right: 5vh;
+    }
+}

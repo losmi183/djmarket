@@ -18,27 +18,18 @@
 
                     <h2>Returning Customer</h2>
             
-                   
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                    <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}"  autocomplete="email" autofocus>
+                        <input placeholder="Email" id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
 
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>  
+                        @if ($errors->has('email'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('email') }}</strong>
+                            </span>
+                        @endif
+                    </div>
 
                     <div class="mb-3 input-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">
-                                <i class="fa fa-lock" aria-hidden="true"></i>
-                            </span>
-                        </div>
 
                         <input placeholder="Password" id="password" type="password" class="form-control" name="password" required>
 

@@ -7,14 +7,7 @@
 <section id="landing-random">
     <div class="my-container">
         <h1 class="landing-caption mb-4">Some of our products</h1>
-        {{-- <p class="landing-text">Product at this App are examples with fictive price.</p>
-        <p>You are welcome to check our example products, test cart and coupons and checkout with example card number</p>
-        
-        
-        <div class="begin-buttons">
-            <a href=" {{route('shop.index')}} " class="button-dark">Featured</a>
-            <a href="{{route('shop.index')}}" class="button-dark">On Sale</a>
-        </div> --}}
+
 
         <div class="random-products">
 
@@ -29,6 +22,7 @@
                     <p>{{$product->presentPrice()}}</p>
                 </div>
             @endforeach
+
             
         </div>
 

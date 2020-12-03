@@ -6,16 +6,22 @@
         <div class="might-like-images">
 
             @foreach ($mightLike as $product)
-                <div class="box">
-                    <div class="box-image">
-                    <a href=" {{route('shop.show', $product->slug)}} ">
-                        <img width="250px" src="{{asset('storage/products/'.$product->image)}}" alt="">
+                <div class="box2">
+                    <a href="{{route('shop.show', $product->slug)}}">
+                        <div class="box2-image">
+                                <img src="{{$product->image ? asset('storage/products/'.$product->image) : asset('/img/no-image.jpg') }}">
+                            <div class="icons-wrapper">
+                                <a title="Add product to wish list" href="#">
+                                    <div class="icon"><i class="far fa-heart"></i></div>
+                                </a>
+                                <a title="View product details" href="{{route('shop.show', $product->slug)}}">
+                                    <div class="icon"><i class="fas fa-eye"></i></div>
+                                </a>
+                            </div>
+                        </div>
                     </a>
-                    </div>
-                    <a href=" {{route('shop.show', $product->slug)}} ">
-                        <h5>{{ $product->name }}</h5>
-                    </a>
-                    <p>{{ $product->presentPrice() }}</p>
+                    <a href="{{route('shop.show', $product->slug)}}"><h5>{{$product->name}}</h5></a>
+                    <p>{{$product->presentPrice()}}</p>
                 </div>
             @endforeach
 
